@@ -37,3 +37,22 @@ let fruits = ["apple" , "anar" , "mangoes"];
 let person = {name: "ali" , age : 25};
 console.log(fruits);
 console.log(person);
+
+
+//THREE YS TO ITE THE FUNCTION 
+//function declaration
+function greet(name)
+{
+    return`hello,${name}`;
+}
+greet("ALi");
+//function expression
+const greet = function(name){
+return `hello,${name}`;
+};
+
+//Arrofunction 
+const greet = (name) =>{
+    return`hello,${name}`;
+};
+const greet = name => `Hello,${name};`

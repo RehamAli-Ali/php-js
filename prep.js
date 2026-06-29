@@ -30,29 +30,59 @@
 // }
 
 
-let name = "World";
-let greeting2 = `Hello ${name}`;
-console.log(greeting2);
-let fruits = ["apple" , "anar" , "mangoes"];
-let person = {name: "ali" , age : 25};
-console.log(fruits);
-console.log(person);
+// let name = "World";
+// let greeting2 = `Hello ${name}`;
+// console.log(greeting2);
+// let fruits = ["apple" , "anar" , "mangoes"];
+//  let person = {name: "ali" , age : 25};
+// // console.log(fruits);
+//  console.log(person);
 
 
 //THREE YS TO ITE THE FUNCTION 
 //function declaration
-function greet(name)
-{
-    return`hello,${name}`;
-}
-greet("ALi");
-//function expression
-const greet = function(name){
-return `hello,${name}`;
-};
+// function greet(name)
+// {
+//     return`hello,${name}`;
+// }
+// greet("ALi");
+// //function expression
+// const greet = function(name){
+// return `hello,${name}`;
+// };
 
-//Arrofunction 
-const greet = (name) =>{
-    return`hello,${name}`;
-};
-const greet = name => `Hello,${name};`
+// // //Arrofunction 
+// const greet = (name) =>{
+//     return`hello,${name}`;
+// };
+// const greet = name => `Hello,${name};`
+
+// let outer = "T am outside";
+// function demo()
+// {
+//     console.log(outer);
+// };
+
+// sayHI();
+// function sayHI()
+// {
+//     console.log("hi");
+// }
+
+// sayBye();
+//  function sayBye ()
+// {
+//     console.log("bye");
+// };
+
+
+
+//FOREACH
+const nums =[1,2,3]
+nums.forEach((num) => console.log(num*2));
+console.log(nums);
+//MAP
+// const number = [1,2,3]
+// const doubled = number.map(num => num * 2)
+// console.log(number);
+// console.log(doubled);

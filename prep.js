@@ -78,11 +78,16 @@
 
 
 //FOREACH
-const nums =[1,2,3]
-nums.forEach((num) => console.log(num*2));
-console.log(nums);
-//MAP
+// const nums =[1,2,3]
+// nums.forEach((num) => console.log(num*2));
+// console.log(nums)
+// //MAP
 // const number = [1,2,3]
 // const doubled = number.map(num => num * 2)
 // console.log(number);
 // console.log(doubled);
+//map always returns a new array of the exact same length one output per input, transformed. It never mutates the original
+
+// ok so here is the beginner mistake
+const res = nums.map(num => {num * 2;}); // forgot 'return'
+console.log(res);

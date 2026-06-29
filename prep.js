@@ -102,9 +102,44 @@
 // const sum = nums.reduce((acc, num) => acc + num , 0);
 // console.log(sum);
 //CONVERT AN ARRAY INTO AN OBJECT
-const fruits = ["apple", "banana", "apple", "orange", "apple"];
-const count = fruits.reduce((acc, fruit) => {
-    acc[fruit] = (acc[fruit] || 0) + 1;
-    return acc;
-}, {});
-console.log(count);
+// const fruits = ["apple", "banana", "apple", "orange", "apple"];
+// const count = fruits.reduce((acc, fruit) => {
+//     acc[fruit] = (acc[fruit] || 0) + 1;
+//     return acc;
+// }, {});
+// console.log(count);
+// none of these 4 ever mutate the original array
+// destructuring -- "unpacking a box without writing"
+//ARRAY DESTRUCTURING -- POSITION MATTERS
+// const arr = [1,2,3];
+// const [first, second] = arr;
+// console.log(first, second);
+
+// const [a, ,c] = arr;
+// console.log(a,c);
+
+// const [x = 10, y = 20] = [undefined, 5];
+// console.log(x,y);
+
+//OBJECT DESTRUCTURING -- NAMES MATTER, NOT POSITION
+// const user = {name: "Ali", age: 25};
+// const {name, age} = user;
+// console.log(name,age);
+
+// const {name: userName } = user;
+// console.log(userName);
+
+// const {city = "not kno"} = user;
+// console.log(city);
+
+// NESTED DESTRUCTURING 
+// const person = {name: "Ali", address: {city : "lahore"}};
+// const {address : {city}} = person;
+// console.log(city);
+
+
+// DESTRUCTURING DIRECTLY IN FUNCTION PARAMETERS-- EXTREMELY COMMON IN REAL CODE, ESPECIALLY REACT
+function greet({name, age}){
+    return `${name} is ${age}`;
+}
+greet({name : "Ali" , age = 25});

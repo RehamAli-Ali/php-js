@@ -89,5 +89,10 @@
 //map always returns a new array of the exact same length one output per input, transformed. It never mutates the original
 
 // ok so here is the beginner mistake
-const res = nums.map(num => {num * 2;}); // forgot 'return'
-console.log(res);
+//const res = nums.map(num => {num * 2;}); // forgot 'return'
+//console.log(res);
+
+// FILTER -- "keep only what passes a test"
+const nums = [1,2,3,4,5]
+const evens = nums.filter(num => num % 2 === 0);
+console.log(evens);

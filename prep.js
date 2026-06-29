@@ -93,6 +93,18 @@
 //console.log(res);
 
 // FILTER -- "keep only what passes a test"
-const nums = [1,2,3,4,5]
-const evens = nums.filter(num => num % 2 === 0);
-console.log(evens);
+// const nums = [1,2,3,4,5]
+// const evens = nums.filter(num => num % 2 === 0);
+// console.log(evens);
+// //REDUCE - "boil the whole array down to one value"
+// array.reduce((accumulator, currentItem) => {} , initialValue) ;
+// const nums = [2,4,6];
+// const sum = nums.reduce((acc, num) => acc + num , 0);
+// console.log(sum);
+//CONVERT AN ARRAY INTO AN OBJECT
+const fruits = ["apple", "banana", "apple", "orange", "apple"];
+const count = fruits.reduce((acc, fruit) => {
+    acc[fruit] = (acc[fruit] || 0) + 1;
+    return acc;
+}, {});
+console.log(count);
